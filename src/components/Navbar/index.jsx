@@ -28,14 +28,14 @@ export default function Navbar() {
               </a>
             </div>
             <div id="my-nav" class="hidden md:flex space-x-4 items-center">
-              <a id="about-nav" class="btn py-3 px-2 rounded dark:text-white" href="/#about-section">
+              <a id="about-nav" class="btn dark:hover:bg-blue-400 py-3 px-2 rounded dark:text-white" href="/#about-section">
                 About
               </a>
-              <a id="works-nav" class="btn py-3 px-2 rounded dark:text-white" href="/#works-section">
+              <a id="works-nav" class="btn dark:hover:bg-blue-400 py-3 px-2 rounded dark:text-white" href="/#works-section">
                 {" "}
                 Works{" "}
               </a>
-              <a id="link-nav" class="btn py-3 px-2 rounded dark:text-white" href="/#link-section">
+              <a id="link-nav" class="btn dark:hover:bg-blue-400 py-3 px-2 rounded dark:text-white" href="/#link-section">
                 {" "}
                 Link{" "}
               </a>
@@ -44,12 +44,9 @@ export default function Navbar() {
               <a href="https://github.com/iqbalutomo" target="blank">
                 <img src={icGithubBlack} alt="GitHub" width="25" class="bg-white rounded-full border-2 border-white" />
               </a>
-              <button type="button" onClick={() => setTheme(colorTheme)} class="sun py-2 px-2 font-medium rounded bg-purple-300 hover:bg-purple-200 hover:text-yellow-100 transition duration-100 dark:bg-pink-400">
+              <button type="button" onClick={() => setTheme(colorTheme)} class="sun py-2 px-2 font-medium rounded bg-purple-500 hover:bg-purple-400 hover:text-yellow-100 transition duration-100 dark:bg-lightmode">
                 {colorTheme == "light" ? <img src={icLightTheme} width="20" /> : <img src={icDarkTheme} width="20" />}
               </button>
-              {/* <button type="button" onClick={() => setTheme(colorTheme)} class="moon py-2 px-2 font-medium rounded bg-purple-300 hover:bg-purple-200 hover:text-yellow-100 transition duration-100 dark:bg-pink-400">
-                <img src={icDarkTheme} width="20" />
-              </button> */}
             </div>
             <div class="md:hidden flex items-center">
               <button class="outline-none mobile-menu-button">
@@ -64,17 +61,17 @@ export default function Navbar() {
         <div class="hidden mobile-menu">
           <ul class="">
             <li class="">
-              <a href="#about-section" class="block text-sm px-2 py-4 hover:brown font-semibold dark:text-white">
+              <a href="/#about-section" class="block text-sm px-2 py-4 hover:brown font-semibold dark:text-white">
                 About
               </a>
             </li>
             <li>
-              <a href="#works-section" class="block text-sm px-2 py-4 hover:brown transition duration-100 dark:text-white">
+              <a href="/#works-section" class="block text-sm px-2 py-4 hover:brown transition duration-100 dark:text-white">
                 Works
               </a>
             </li>
             <li>
-              <a href="#link-section" class="block text-sm px-2 py-4 hover:brown transition duration-100 dark:text-white">
+              <a href="/#link-section" class="block text-sm px-2 py-4 hover:brown transition duration-100 dark:text-white">
                 Link
               </a>
             </li>

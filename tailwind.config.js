@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         "darkmode": "#202023",
+        "lightmode": "#f0e7db",
+        "grey": "#313134"
       },
     },
   },

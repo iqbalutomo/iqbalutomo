@@ -43,27 +43,27 @@ export default function PortfolioDetail(props) {
   const { id } = useParams();
 
   return (
-    <div>
+    <div class="dark:bg-darkmode">
       <Navbar />
       <WeBareBears />
       <section>
         <div class="max-w-3xl mx-auto px-4 py-10">
-          <h1 class="font-bold text-xl text-center mb-4">{name}</h1>
-          <p class="text-justify mb-8">{desc}</p>
+          <h1 class="font-bold text-xl text-center mb-4 dark:text-blue-400">{name}</h1>
+          <p class="text-justify mb-8 dark:text-gray-200">{desc}</p>
           <div class="flex flex-wrap justify-between gap-4">
             <div class="flex inline-flex items-center gap-2">
-              <h4 class="font-bold py-2 px-2 rounded-md khaki-2">WEBSITE</h4>
-              <a class={website == "in development" ? `py-2 px-2 rounded text-yellow-100 bg-green-500` : `text-blue-400 hover:underline md:mr-48`} href={link} target="blank">
+              <h4 class="font-bold py-2 px-2 rounded-md khaki-2 dark:bg-grey dark:text-gray-200">WEBSITE</h4>
+              <a class={website == "in development" ? `py-2 px-2 rounded text-yellow-100 bg-green-500` : `text-blue-400 hover:underline md:mr-48 dark:text-pink-400`} href={link} target="blank">
                 {website}
               </a>
               {website === "in development" ? (
-                <a class="py-2 px-2 rounded text-yellow-100 bg-green-500" target="blank">
+                <a class="py-2 px-2 rounded text-yellow-100 bg-pink-400 dark:text-gray-200" target="blank">
                   84%
                 </a>
               ) : null}
             </div>
             <div class="flex inline-flex items-start gap-2">
-              <h4 class="font-bold py-2 px-2 rounded-md khaki-2">TECH</h4>
+              <h4 class="font-bold py-2 px-2 rounded-md khaki-2 dark:bg-grey dark:text-gray-200">TECH</h4>
               {name === "PT. HIS Corp Intern" ? (
                 <div class="flex flex-wrap justify-between gap-4">
                   <a href="">
@@ -73,19 +73,19 @@ export default function PortfolioDetail(props) {
                     <img src={reactjs} width="50" alt="React.js" />
                   </a>
                   <a href="">
-                    <img src={mongodb} width="100" alt="MongoDB" />
+                    <img src={mongodb} width="100" alt="MongoDB" class="dark:bg-gray-200" />
                   </a>
                   <a href="">
                     <img src={express} width="100" alt="Express.js" />
                   </a>
                   <a href="">
-                    <img src={nodejs} width="80" alt="NodeJS" />
+                    <img src={nodejs} width="80" alt="NodeJS" class="dark:bg-gray-200" />
                   </a>
                   <a href="">
                     <img src={bootstrap} width="50" alt="Bootstrap" />
                   </a>
                   <a href="">
-                    <img src={netlify} width="100" alt="Netlify" />
+                    <img src={netlify} width="100" alt="Netlify" class="dark:bg-gray-200" />
                   </a>
                 </div>
               ) : null}
@@ -98,7 +98,7 @@ export default function PortfolioDetail(props) {
                     <img src={reactjs} width="50" alt="React.js" />
                   </a>
                   <a href="">
-                    <img src={firebase} width="100" alt="Firebase" />
+                    <img src={firebase} width="100" alt="Firebase" class="dark:bg-gray-200" />
                   </a>
                   <a href="">
                     <img src={figma} width="50" alt="Figma" />
@@ -114,19 +114,19 @@ export default function PortfolioDetail(props) {
                     <img src={reactjs} width="50" alt="React.js" />
                   </a>
                   <a href="">
-                    <img src={nextjs} width="100" alt="Next.js" />
+                    <img src={nextjs} width="100" alt="Next.js" class="dark:bg-gray-200" />
                   </a>
                   <a href="">
-                    <img src={mongodb} width="100" alt="MongoDB" />
+                    <img src={mongodb} width="100" alt="MongoDB" class="dark:bg-gray-200" />
                   </a>
                   <a href="">
-                    <img src={nodejs} width="80" alt="NodeJS" />
+                    <img src={nodejs} width="80" alt="NodeJS" class="dark:bg-gray-200" />
                   </a>
                   <a href="">
                     <img src={tailwindcss} width="50" alt="Tailwind CSS" />
                   </a>
                   <a href="">
-                    <img src={vercel} width="100" alt="Vercel" />
+                    <img src={vercel} width="100" alt="Vercel" class="dark:bg-gray-200" />
                   </a>
                 </div>
               ) : null}
