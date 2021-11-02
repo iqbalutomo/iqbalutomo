@@ -8,17 +8,17 @@ import WeBareBears from "../components/WeBareBears";
 
 export default function Home() {
   return (
-    <div class="dark:bg-darkmode transition duration-300">
+    <div className="dark:bg-darkmode transition duration-300">
       <Navbar />
 
       <section id="about-section">
-        <div class="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <WeBareBears />
           <About />
         </div>
       </section>
 
-      <section id="works-section" class="pt-10">
+      <section id="works-section" className="pt-10">
         <Portfolio />
       </section>
 

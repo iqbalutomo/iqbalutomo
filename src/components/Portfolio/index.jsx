@@ -6,10 +6,10 @@ import StoreGG from "../../assets/images/list-portfolio/Store GG.jpg";
 
 export default function Portfolio() {
   return (
-    <div class="max-w-3xl mx-auto px-4 py-10">
-      <h1 class="font-bold text-xl text-center dark:text-pink-400">Portfolio</h1>
-      <p class="text-center mb-8 dark:text-gray-200">You can click on them to see more details</p>
-      <div class="flex flex-wrap justify-around gap-4">
+    <div className="max-w-3xl mx-auto px-4 py-10">
+      <h1 className="font-bold text-xl text-center dark:text-pink-400">Portfolio</h1>
+      <p className="text-center mb-8 dark:text-gray-200">You can click on them to see more details</p>
+      <div className="flex flex-wrap justify-around gap-4">
         <ListPortfolio
           title="PT. HIS Corp Intern"
           image={HisCorp}
@@ -37,7 +37,7 @@ export default function Portfolio() {
           description="Top up game website where players can buy coins, diamonds or the like to improve appearance and level."
           fullDesc="A site to buy coins, diamonds and more for gamers who want to enhance their gaming experience even further. In its development, I applied a headless CMS technique using Strapi. this has become my valuable experience in implementing serverless."
           webName="in development"
-          webLink={false}
+          webLink=""
         />
       </div>
     </div>
