@@ -8,7 +8,7 @@ import WeBareBears from "../components/WeBareBears";
 
 export default function Home() {
   return (
-    <>
+    <div class="dark:bg-darkmode transition duration-300">
       <Navbar />
 
       <section id="about-section">
@@ -27,6 +27,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }
