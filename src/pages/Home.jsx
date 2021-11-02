@@ -1,6 +1,7 @@
 import React from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
 import WeBareBears from "../components/WeBareBears";
@@ -25,9 +26,7 @@ export default function Home() {
         <Contact />
       </section>
 
-      <footer>
-        <p class="text-sm text-gray-400 text-center mb-10 my-10">iqbalutomo. All Rights Reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }
