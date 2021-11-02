@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
 import WeBareBears from "../components/WeBareBears";
@@ -21,23 +22,7 @@ export default function Home() {
       </section>
 
       <section id="link-section">
-        <div class="max-w-3xl mx-auto px-4 py-10">
-          <h1 class="font-bold text-xl text-center mb-8">Link</h1>
-          <div class="flex flex-wrap justify-center gap-4">
-            <a href="" class="flex md:inline-flex items-center gap-2 py-3 px-3 rounded-md border-2 border-khaki hover:underline">
-              <img src="./assets/icon/iconmonstr-github-1.svg" alt="GitHub" />
-              <h4>@iqbalutomo</h4>
-            </a>
-            <a href="" class="flex md:inline-flex items-center gap-2 py-3 px-3 rounded-md border-2 border-khaki hover:underline">
-              <img src="./assets/icon/gmail.png" width="24" height="24" alt="Email" />
-              <h4>muhlisiqbalutomo@gmail.com</h4>
-            </a>
-            <a href="" class="flex md:inline-flex items-center gap-2 py-3 px-3 rounded-md border-2 border-khaki hover:underline">
-              <img src="./assets/icon/instagram.png" width="24" height="24" alt="Instagram" />
-              <h4>@iqbalutomo</h4>
-            </a>
-          </div>
-        </div>
+        <Contact />
       </section>
 
       <footer>
