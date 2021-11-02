@@ -2,13 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #f0e7db;
+}
+/* color */
+.text-brown {
+  color: #6a4229;
+}
+.brown {
+  background-color: #6a4229;
+}
+.border-brown {
+  border-color: #6a4229;
+}
+.text-khaki {
+  color: #f0e7db;
+}
+.khaki {
+  background-color: #f0e7db;
+}
+.border-khaki {
+  border-color: #fdf7ee;
+}
+.khaki-2 {
+  background-color: #fdf7ee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+/* active nav */
+.active-nav,
+.btn:hover {
+  background-color: #6a4229;
+  color: #f0e7db;
+}
+
+/* model 3D */
+model-viewer {
+  /* background-color: black; */
+  height: 400px;
+  --poster-color: transparent;
+  --progress-bar-color: transparent;
 }
