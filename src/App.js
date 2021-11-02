@@ -1,21 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "@google/model-viewer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-          <div class="flex-shrink-0">
-            <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo" />
-          </div>
-          <div>
-            <div class="text-xl font-medium text-black">ChitChat</div>
-            <p class="text-gray-500">You have a new message!</p>
-          </div>
-        </div>
-      </header>
+    <div>
+      <model-viewer
+        src="/Astronaut.glb"
+        ios-src=""
+        poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
+        alt="A 3D model of an astronaut"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar
+      ></model-viewer>
     </div>
   );
 }
