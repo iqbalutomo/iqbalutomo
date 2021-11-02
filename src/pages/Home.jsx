@@ -1,6 +1,6 @@
 import React from "react";
-import "@google/model-viewer";
 import Navbar from "../components/Navbar";
+import WeBareBears from "../components/WeBareBears";
 
 export default function Home() {
   return (
@@ -9,19 +9,7 @@ export default function Home() {
 
       <section id="about-section">
         <div class="max-w-6xl mx-auto px-4">
-          <model-viewer
-            id="bare"
-            class="top-0 w-full pt-28 pb-10"
-            alt="we bare bear"
-            src="/scene.gltf"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            // environment-image="./assets/model/bare/Material.005_baseColor.png"
-            seamless-poster
-            shadow-intensity="1"
-            camera-controls
-            auto-rotate
-          ></model-viewer>
+          <WeBareBears />
           <div class="max-w-3xl mx-auto">
             <div class="py-4 rounded-xl khaki-2 text-brown text-2xl text-center font-extrabold">
               <h1>Hi, I'm Iqbal.</h1>
