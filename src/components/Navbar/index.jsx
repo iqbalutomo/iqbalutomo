@@ -19,7 +19,7 @@ export default function Navbar() {
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
             <div>
-              <a href="#" class="flex items-center py-4 px-2">
+              <a href="/" class="flex items-center py-4 px-2">
                 <span class="font-semibold text=black text-lg">iqbalutomo</span>
               </a>
             </div>
