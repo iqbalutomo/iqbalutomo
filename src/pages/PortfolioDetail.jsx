@@ -43,7 +43,7 @@ export default function PortfolioDetail(props) {
   const { id } = useParams();
 
   return (
-    <>
+    <div>
       <Navbar />
       <WeBareBears />
       <section>
@@ -51,22 +51,20 @@ export default function PortfolioDetail(props) {
           <h1 class="font-bold text-xl text-center mb-4">{name}</h1>
           <p class="text-justify mb-8">{desc}</p>
           <div class="flex flex-wrap justify-between gap-4">
-            <div class="flex inline-flex items-center gap-2 pr-48">
+            <div class="flex inline-flex items-center gap-2">
               <h4 class="font-bold py-2 px-2 rounded-md khaki-2">WEBSITE</h4>
-              <a class={website == "in development" ? `py-2 px-2 rounded text-yellow-100 bg-green-500` : `text-blue-400 hover:underline`} href={link} target="blank">
+              <a class={website == "in development" ? `py-2 px-2 rounded text-yellow-100 bg-green-500` : `text-blue-400 hover:underline md:mr-48`} href={link} target="blank">
                 {website}
               </a>
-              {website == "in development" ? (
+              {website === "in development" ? (
                 <a class="py-2 px-2 rounded text-yellow-100 bg-green-500" target="blank">
                   84%
                 </a>
-              ) : (
-                ""
-              )}
+              ) : null}
             </div>
             <div class="flex inline-flex items-start gap-2">
               <h4 class="font-bold py-2 px-2 rounded-md khaki-2">TECH</h4>
-              {id == "his" ? (
+              {name === "PT. HIS Corp Intern" ? (
                 <div class="flex flex-wrap justify-between gap-4">
                   <a href="">
                     <img src={javascript} width="50" alt="JavaScript" />
@@ -90,10 +88,8 @@ export default function PortfolioDetail(props) {
                     <img src={netlify} width="100" alt="Netlify" />
                   </a>
                 </div>
-              ) : (
-                ""
-              )}
-              {id == "aleem" ? (
+              ) : null}
+              {name === "Aleem" ? (
                 <div class="flex flex-wrap justify-between gap-4">
                   <a href="">
                     <img src={javascript} width="50" alt="JavaScript" />
@@ -108,10 +104,8 @@ export default function PortfolioDetail(props) {
                     <img src={figma} width="50" alt="Figma" />
                   </a>
                 </div>
-              ) : (
-                ""
-              )}
-              {id == "storegg" ? (
+              ) : null}
+              {name === "Store GG" ? (
                 <div class="flex flex-wrap justify-between gap-4">
                   <a href="">
                     <img src={typescript} width="50" alt="TypeScript" />
@@ -135,12 +129,10 @@ export default function PortfolioDetail(props) {
                     <img src={vercel} width="100" alt="Vercel" />
                   </a>
                 </div>
-              ) : (
-                ""
-              )}
+              ) : null}
             </div>
           </div>
-          {id == "his" ? (
+          {name === "PT. HIS Corp Intern" ? (
             <>
               <div class="my-10 mx-auto">
                 <img class="mb-4 rounded-md" src={his1} alt="" />
@@ -148,10 +140,8 @@ export default function PortfolioDetail(props) {
                 <img class="mb-4 rounded-md" src={his3} alt="" />
               </div>
             </>
-          ) : (
-            ""
-          )}
-          {id == "aleem" ? (
+          ) : null}
+          {name === "Aleem" ? (
             <>
               <div class="flex flex-wrap justify-center md:justify-between my-10 mx-auto">
                 <img class="mb-4 rounded-md" width="300" src={aleem1} alt="" />
@@ -160,10 +150,8 @@ export default function PortfolioDetail(props) {
                 <img class="mb-4 rounded-md" width="300" src={aleem4} alt="" />
               </div>
             </>
-          ) : (
-            ""
-          )}
-          {id == "storegg" ? (
+          ) : null}
+          {name === "Store GG" ? (
             <>
               <div class="my-10 mx-auto">
                 <img class="mb-4 rounded-md" src={storegg1} alt="" />
@@ -173,12 +161,10 @@ export default function PortfolioDetail(props) {
                 <img class="mb-4 rounded-md" src={storegg5} alt="" />
               </div>
             </>
-          ) : (
-            ""
-          )}
+          ) : null}
         </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

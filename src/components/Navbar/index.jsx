@@ -24,14 +24,14 @@ export default function Navbar() {
               </a>
             </div>
             <div id="my-nav" class="hidden md:flex space-x-4 items-center">
-              <a id="about-nav" class="btn py-3 px-2 rounded active-nav" href="#about-section">
+              <a id="about-nav" class="btn py-3 px-2 rounded" href="/#about-section">
                 About
               </a>
-              <a id="works-nav" class="btn py-3 px-2 rounded" href="#works-section">
+              <a id="works-nav" class="btn py-3 px-2 rounded" href="/#works-section">
                 {" "}
                 Works{" "}
               </a>
-              <a id="link-nav" class="btn py-3 px-2 rounded" href="#link-section">
+              <a id="link-nav" class="btn py-3 px-2 rounded" href="/#link-section">
                 {" "}
                 Link{" "}
               </a>
@@ -59,8 +59,8 @@ export default function Navbar() {
 
         <div class="hidden mobile-menu">
           <ul class="">
-            <li class="active">
-              <a href="#about-section" class="block text-sm px-2 py-4 text-white brown font-semibold">
+            <li class="">
+              <a href="#about-section" class="block text-sm px-2 py-4 hover:brown font-semibold">
                 About
               </a>
             </li>
