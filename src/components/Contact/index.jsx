@@ -11,7 +11,7 @@ export default function Contact() {
       <h1 className="font-bold text-xl text-center mb-8 dark:text-pink-400">Link</h1>
       <div className="flex flex-wrap justify-center gap-4">
         <ListLink title="@iqbalutomo" icon={icGithub} width="26" height="26" alt="GitHub" link="https://github.com/iqbalutomo" />
-        <ListLink title="Muhlis Iqbal Utomo" icon={icLinkedin} width="26" height="26" alt="LinkedIn" link="https://www.linkedin.com/in/muhlis-iqbal-utomo-2257a2224" />
+        <ListLink title="Muhlis Iqbal Utomo" icon={icLinkedin} width="26" height="26" alt="LinkedIn" link="https://www.linkedin.com/in/muhlis-iqbal-utomo" />
         <ListLink title="@iqbalutomo" icon={icInstagram} width="24" height="24" alt="Instagram" link="https://www.instagram.com/iqbalutomo/" />
         <ListLink title="muhlisiqbalutomo@gmail.com" icon={icEmail} width="24" height="24" alt="Email" link="mailto:muhlisiqbalutomo@gmail.com" />
       </div>
