@@ -23,9 +23,9 @@ export default function About() {
         <div className="flex flex-col md:w-2/3 text-justify dark:text-gray-200">
           <p>
             I am Iqbal, a 23 year old Frontend Engineer, currently living in
-            Depok, West Java. In October 2018 I got my first job as a web
-            developer at a wedding company in Jakarta. In 2019 I quit my job to
-            focus on pursuing a bachelor's degree in computer science and I
+            Depok, West Java, Indonesia. In October 2018 I got my first job as a
+            web developer at a wedding company in Jakarta. In 2019 I quit my job
+            to focus on pursuing a bachelor's degree in computer science and I
             decided to deepen my Javascript skills. In August 2021 I graduated
             as a computer science graduate and I successfully completed my final
             project using React, and in 2022 I work at Paras Digital until now.
