@@ -1,14 +1,19 @@
-import React from "react";
-import ListPortfolio from "./ListPortfolio";
-import HisCorp from "../../assets/images/list-portfolio/His Corp.jpg";
-import Aleem from "../../assets/images/list-portfolio/Aleem.jpg";
-import StoreGG from "../../assets/images/list-portfolio/Store GG.jpg";
+import React from 'react';
+import ListPortfolio from './ListPortfolio';
+import HisCorp from '../../assets/images/list-portfolio/His Corp.jpg';
+import Aleem from '../../assets/images/list-portfolio/Aleem.jpg';
+import StoreGG from '../../assets/images/list-portfolio/Store GG.jpg';
+import NearBook from '../../assets/images/list-portfolio/near-book.png';
 
 export default function Portfolio() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="font-bold text-xl text-center dark:text-pink-400">Portfolio</h1>
-      <p className="text-center mb-8 dark:text-gray-200">You can click on them to see more details</p>
+      <h1 className="font-bold text-xl text-center dark:text-pink-400">
+        Portfolio
+      </h1>
+      <p className="text-center mb-8 dark:text-gray-200">
+        You can click on them to see more details
+      </p>
       <div className="flex flex-wrap justify-around gap-4">
         <ListPortfolio
           title="PT. HIS Corp Intern"
@@ -38,6 +43,15 @@ export default function Portfolio() {
           fullDesc="A site to buy coins, diamonds and more for gamers who want to enhance their gaming experience even further. In its development, I applied a headless CMS technique using Strapi. this has become my valuable experience in implementing serverless."
           webName="in development"
           webLink=""
+        />
+        <ListPortfolio
+          title="Near Book"
+          image={NearBook}
+          link="nearbook"
+          description="Near Book is a library application for managing the list of books we are reading, and this application is integrated with Blockchain."
+          fullDesc="Near Book is a library application for managing the list of books we are reading, and this application is integrated with Blockchain."
+          webName="https://near-book.vercel.app/"
+          webLink="https://near-book.vercel.app/"
         />
       </div>
     </div>
