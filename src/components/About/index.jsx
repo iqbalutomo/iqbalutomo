@@ -32,10 +32,9 @@ export default function About() {
           </p>
           <br />
           <p>
-            From there I was very interested and focused on becoming a Software
-            Engineer. I always want to learn more and do more. I also strongly
-            believe that we should not be complacent. I am a hard worker, very
-            curious, passionate, committed and a fast learner!
+            I always want to learn more and do more. I also strongly believe
+            that we should not be complacent. I am a hard worker, very curious,
+            passionate, committed and a fast learner!
           </p>
         </div>
       </div>
